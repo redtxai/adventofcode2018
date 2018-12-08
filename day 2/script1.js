@@ -258,14 +258,14 @@ abcdee
 ababab`
 
 const arr = entryValue.split('\n').reduce((returnArray, value) => {
-	const valueArray = [...value]
+  const valueArray = [...value]
   let objCharsCount = {}
 
-	valueArray.forEach((char) =>{
+  valueArray.forEach((char) =>{
     objCharsCount[char] = objCharsCount[char] ? objCharsCount[char] + 1 : 1
   })
 
-	if (Object.values(objCharsCount).includes(2)) {
+  if (Object.values(objCharsCount).includes(2)) {
     returnArray[0]++
   }
 
@@ -273,7 +273,7 @@ const arr = entryValue.split('\n').reduce((returnArray, value) => {
     returnArray[1]++
   }
 
-	return returnArray
+  return returnArray
 }, [0, 0])
 
 console.log(arr[0] * arr[1])
