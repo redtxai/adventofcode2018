@@ -269,8 +269,8 @@ for (let i = 0; i <= entryValueArray.length -1; i++) {
     }, 0)
 
     if (diff === 1) {
-		  console.log(entryValueArray[i])
-		  console.log(entryValueArray[j])
-		}
+      console.log(entryValueArray[i])
+      console.log(entryValueArray[j])
+    }
   }
 }
